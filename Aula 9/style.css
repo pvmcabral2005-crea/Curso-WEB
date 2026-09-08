@@ -1,23 +1,29 @@
 body {
+    font-family:Arial,sans-serif;
     background-color: cyan;
     margin: 0;
     padding: 10px;
+    color:black;
     font-size: 20px;
+    
 }
 
-nav a {
-    color: blueviolet;
+nav {margin-top:20px;
+
+a {
+    color:coral;
     font-size: 20px;
     padding: 10px;
-    text-align: justify;
-}
+    text-align: center;}
 
-nav ul {
+
+  ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
     display: flex;
     justify-content: center;
+}
 }
 
 .container {
@@ -33,40 +39,45 @@ header {
     text-align: center;
 }
 
-.grid {
-    display: flex;
-    background-color: crimson;
-    margin: 0;
-    text-align: center;
-    padding: 10px;
-}
-.card-sabores{
+.grid-sabores {
     display:flex;
+    justify-content:center;
+    gap: 20px;
+}
+
+.card-sabores {
+    background-color: darkred;
+    padding: 8px;
+    color:cadetblue;
+    font-size:15px;
+
 }
 
 div {
-    background-color: beige;
-    padding: 10px;
-    margin: 0;
+    background-color:blanchedalmond;
+    padding: 9px;
+    margin: 10px;
+    border: 2px solid;
 }
 
-h1,
-h2 {
-    background-color: blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1,h2 {
+    background-color:cornflowerblue;
+    font-family:Arial, Helvetica, sans-serif;
     padding: 10px;
     text-align: center;
 }
 
 p {
-    color: black;
+    color: rgb(34, 33, 33);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    padding: 10px;
 }
 
 footer {
-    background-color: brown;
-    padding: 15px;
-    border: 1px solid orange;
+    background-color: chocolate;
+    padding: 10px;
+    border: 2px solid green;
     text-align: center;
+    font-size: 5px;
 }
