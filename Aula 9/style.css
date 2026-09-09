@@ -1,6 +1,5 @@
-body {
+body {background-color: cyan;
     font-family:Arial,sans-serif;
-    background-color: cyan;
     margin: 0;
     padding: 10px;
     color:black;
@@ -38,11 +37,35 @@ header {
     border: 1px solid green;
     text-align: center;
 }
+.formulario {
+    max-width:400px;
+    margin:20px auto;
+}
+
+.formulario form {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.formulario input,.formulario textarea {
+    padding:9px;
+    border: 2px solid burlywood;
+    border-radius: 4px;
+}
+
+.formulario button{
+    background-color:aqua;
+    padding:10px;
+    color:black;
+    border: none;
+    border-radius:5px;
+}
 
 .grid-sabores {
     display:flex;
     justify-content:center;
-    gap: 20px;
+    gap: 24px;
 }
 
 .card-sabores {
@@ -52,12 +75,19 @@ header {
     font-size:15px;
 
 }
+.sobre,.contato{
+    background-color: brown;
+    margin-bottom:30px;
+    padding:20px;
+    border-radius:10px;
+}
 
 div {
     background-color:blanchedalmond;
-    padding: 9px;
-    margin: 10px;
-    border: 2px solid;
+    text-align: center;
+    border-radius:30px;
+    padding: 5px;
+    border:18px;
 }
 
 h1,h2 {
@@ -68,16 +98,17 @@ h1,h2 {
 }
 
 p {
-    color: rgb(34, 33, 33);
+    color: rgb(20, 18, 18);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    text-align:center;
     padding: 10px;
 }
 
 footer {
     background-color: chocolate;
+    color:white;
     padding: 10px;
-    border: 2px solid green;
+    margin-top:50px;
     text-align: center;
-    font-size: 5px;
 }

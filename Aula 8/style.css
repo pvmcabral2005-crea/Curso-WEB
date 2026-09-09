@@ -7,6 +7,20 @@ header{background-color: antiquewhite;
       padding:10px;
       border: 2px solid;}
 
+div {
+      background-color:cornsilk;
+      padding:20px;
+      margin:8px;
+      border:1px solid black;
+      border-radius: 50px;
+}
+
+.grid-imagens{
+      padding:24px;
+      background-color: aqua;
+      background-image: none;
+      border-radius: 30px;;
+}
 h1{background-color:rgb(167, 103, 7);
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-size:20px;}
