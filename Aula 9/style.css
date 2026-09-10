@@ -1,5 +1,5 @@
-body {background-color: cyan;
-    font-family:Arial,sans-serif;
+body {background-color:darkmagenta;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 10px;
     color:black;
@@ -26,8 +26,8 @@ a {
 }
 
 .container {
-    max-width: 900px;
-    margin: 30px auto;
+    max-width: 910px;
+    margin: 20px auto;
     padding: 0 20px;
 }
 
@@ -38,15 +38,25 @@ header {
     text-align: center;
 }
 .formulario {
-    max-width:400px;
-    margin:20px auto;
+    max-width:36vw;
+    margin:1vh auto;
 }
 
-.formulario form {
+ form {
     display:flex;
     flex-direction:column;
     gap:16px;
 }
+
+input,textarea {
+     padding:50px;
+     border-radius:5px;
+     border:1px solid aliceblue;
+
+&:focus,&:focus{
+    border-color:chartreuse;
+    outline: none;
+}}
 
 .formulario input,.formulario textarea {
     padding:9px;
@@ -54,40 +64,48 @@ header {
     border-radius: 4px;
 }
 
-.formulario button{
+.formulario input:focus, .formulario textarea:focus{
+    color:cadetblue;
+
+}
+  button{
     background-color:aqua;
-    padding:10px;
+    padding:13px;
     color:black;
     border: none;
-    border-radius:5px;
-}
+    border-radius:24px;
+
+&:hover{
+    background-color:goldenrod;
+    color:black;
+}}
 
 .grid-sabores {
     display:flex;
     justify-content:center;
-    gap: 24px;
+    gap: 21px;
 }
 
 .card-sabores {
     background-color: darkred;
-    padding: 8px;
-    color:cadetblue;
-    font-size:15px;
+    padding: 12px;
+    color:rgb(169, 199, 200);
+    font-size:13px;
 
 }
 .sobre,.contato{
     background-color: brown;
-    margin-bottom:30px;
-    padding:20px;
-    border-radius:10px;
+    margin-bottom:25px;
+    padding:18px;
+    border-radius:26px;
 }
 
 div {
     background-color:blanchedalmond;
     text-align: center;
-    border-radius:30px;
+    border-radius:24px;
     padding: 5px;
-    border:18px;
+    border:19px;
 }
 
 h1,h2 {
