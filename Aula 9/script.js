@@ -1,1 +1,1 @@
-function mostrarmensagem() {alert("Clicou no botão"
+function mostrarmensagem() {alert("Clicou no botão")};
