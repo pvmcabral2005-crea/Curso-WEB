@@ -31,14 +31,16 @@ const areaResultado = document.querySelector('#PainelResultado');
 
 botaoTarde.addEventListener('click', function(){
     let Usuario = caixaTexto.value;
-    areaResultado.textContent = `Boa Tarde ${Usuario}!`;
+    areaResultado.innerHTML = `<h1><em>Boa Tarde ${Usuario}!</em></h1>`;
 });
 botaoDia.addEventListener('click', function(){
     let Usuario = caixaTexto.value;
-    areaResultado.textContent = `Bom Dia ${Usuario}!`;
+    areaResultado.innerHTML = `<h1><em>Bom Dia ${Usuario}!</em></h1> `
+    corpo.style.backgroundColor = 'green';
 });
 
 botaoNoite.addEventListener('click', function(){
     let Usuario = caixaTexto.value;
-    areaResultado.textContent = `Boa Noite ${Usuario}!`;
+    areaResultado.innerHTML = `<h1><em>Boa Noite ${Usuario}!</em></h1>`;
 });
+
