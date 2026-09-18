@@ -1,12 +1,27 @@
-body {background-color:rgb(91, 81, 81);
-      }
+body {
+    background-color: rgb(91, 81, 81);
+}
 
-h1 {font-family:Arial, Helvetica, sans-serif;
-    color:brown;
-    padding:10px;
-    text-align:center;}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    padding: 10px;
+    text-align: center;
+}
 
-div {background-color: cadetblue;
-     font-family:'Times New Roman', Times, serif;
-     padding:9px;
-     text-align:center;}
+div {
+    background-color: cadetblue;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.botao-clicado {
+    background-color: rgb(202, 177, 145);
+    border: 2px solid rgb(125, 184, 41);
+}
+
+.modo-escuro {
+    background-color: rgb(29, 28, 28);
+    color:beige;}
