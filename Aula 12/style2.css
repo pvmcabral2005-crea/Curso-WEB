@@ -1,0 +1,30 @@
+body {
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: azure;
+    color:blue;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+div {
+    margin: 14px;
+    background-color:crimson;
+    padding:15px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 8px;
+
+    input {
+        padding: 12px;
+        border-radius: 16px;
+    }
+
+    button{padding:11px;
+           text-align:center;}
+}

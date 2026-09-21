@@ -1,0 +1,25 @@
+body {
+    background-color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    color: coral;
+    text-align: center;
+}
+
+div {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 15px;
+
+    input {
+        border-radius: 12px;
+        padding: 8px;
+    }
+}
