@@ -1,13 +1,13 @@
-function CalcularMedia() {
+function calcularMedia() {
     let mediaResultado = document.getElementById("mediaResultado");
-    let nota1 = document.getElementById("nota1");
-    let nota2 = document.getElementById("nota2");
-    let nota3 = document.getElementById("nota3");
-    let nota4 = document.getElementById("nota4");
+    let nota1 = Number(document.getElementById("nota1").value);
+    let nota2 = Number(document.getElementById("nota2").value);
+    let nota3 = Number(document.getElementById("nota3").value);
+    let nota4 = Number(document.getElementById("nota4").value);
     let media = (nota1 + nota2 + nota3 + nota4) / 4;
 
     if (media >= 6) {
-        mediaResultado.innerText = "Aprovado!";
+        mediaResultado.innerText = "Aprovado, com sucesso!";
     }
 
     else {

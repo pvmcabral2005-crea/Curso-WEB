@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(241, 241, 240);
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 250px;
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204, 193, 214);
+    text-align: center;
+}
+
+div {
+    padding: 18px;
+    background-color: blanchedalmond;
+    margin: 16px;
+    border: 1px solid blue;
+    border-radius: 15px;;
+    justify-content: center;
+
+    .login-container {
+        background-color: powderblue;
+        display: flex;
+        margin: 12px;
+        padding: 10px;
+        border: 2px solid green;
+
+    }
+}
+
+button {
+    color: black;
+    background-color: azure;
+    font-family: Arial, sans-serif;
+    border: 2px solid azure;
+    border-radius: 2px;
+}

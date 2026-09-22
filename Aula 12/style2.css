@@ -13,9 +13,10 @@ h1 {
 }
 
 div {
-    margin: 14px;
+    margin: 20px;
     background-color:crimson;
-    padding:15px;
+    box-shadow: 5px orange;
+    padding:14px;
     text-align: center;
     border: 2px solid;
     border-radius: 8px;
@@ -26,5 +27,7 @@ div {
     }
 
     button{padding:11px;
-           text-align:center;}
+           text-align:center;
+           border:1px solid grey;
+           border-radius: 15px;}
 }
