@@ -6,9 +6,10 @@ if(Login) {
         const usuario = document.getElementById("usuario").value;
         const senha = document.getElementById("senha").value;
         const mensagem = document.getElementById("mensagem");
-        if(usuario === "Pedmin" & senha === "3103"){
+        if(usuario === "Pedmin" && senha === "3103"){
             mensagem.textContent = "Login realizado com sucesso";
             mensagem.style.color = "blue";
+            window.location.href = "Pagina login.html"
         }
         else{
             mensagem.textContent = "Usuário ou senha incorretos.Tente novamente."
