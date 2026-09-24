@@ -9,10 +9,10 @@ if(Login) {
         if(usuario === "Pedmin" && senha === "3103"){
             mensagem.textContent = "Login realizado com sucesso";
             mensagem.style.color = "blue";
-            window.location.href = "Pagina login.html"
+            window.location.href = "Pagina login.html";
         }
         else{
-            mensagem.textContent = "Usuário ou senha incorretos.Tente novamente."
+            mensagem.textContent = "Usuário ou senha incorretos.Tente novamente.";
             mensagem.style.color ="red";
         }
     });
