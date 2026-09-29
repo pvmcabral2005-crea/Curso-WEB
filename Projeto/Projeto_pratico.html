@@ -6,7 +6,7 @@
 </head>
 <body>
 <header class="cabecalho">
-    <h1><u>Controle de Validade de Estoque</u></h1>
+    <h1><u>🍽️Controle de Validade de Estoque</u></h1>
     <p>Processo necessário para monitorar, organizar e gerenciar
         produtos com data de validade próxima do vencimento.
     </p>
@@ -17,12 +17,16 @@
 <main>
     
    <section class="estoque-produtos">
-    <h2>Estoque de despensa</h2>
-    <p>Acompanhe os ingredientes exibidos na tela 
+    <h2>📦Estoque de despensa</h2>
+    <p><strong>Acompanhe os ingredientes exibidos na tela 
         e suas datas de validade.
-    </p>
+    </strong></p>
 
-    <table>
+    <table border="3">
+
+        <caption>
+            Tabela de produtos do estoque
+        </caption>
         <thead>
         <tr>
             <th>Ingrediente</th>
@@ -38,25 +42,35 @@
         <tbody>
             
         <tr>
-            <td>Pizza</td>
+            <td>🍕Pizza</td>
+            
             <td>12 kg</td>
             <td>20/11/26</td>
-            <td>Dentro do prazo de validade</td>
+            <td>🟢Dentro do prazo de validade</td>
         </tr>
         
         <tr>
-            <td>Arroz</td>
+            <td>🍚Arroz</td>
             <td>15 kg</td>
             <td>12/10/26</td>
-            <td>Próximo do vencimento</td>
+            <td>🟡Próximo do vencimento</td>
         </tr>
         <tr>
-            <td>Açúcar</td>
+            <td>🫘Feijão</td>
             <td>18 g</td>
             <td>27/09/26</td>
-            <td>Produto vencido</td>
+            <td>🔴Produto vencido</td>
+        </tr>
+        
+        <tr>
+            <td>🍰Bolo</td>
+            <td>3kg</td>
+            <td>08/12/26</td>
+            <td>🟢Dentro do prazo de validade</td>
         </tr>
         </tbody>
+
+        
     </table>
     </section>
      <br>
@@ -68,6 +82,7 @@
     <input type="text" id="ingrediente" placeholder="Nome do ingrediente">
     <label for="quantidade">Quantidade:</label>
     <input type="Number" id="quantidade" placeholder="Quantidade solicitada">
+    <button onclick='submit'>Enviar</button>
     </section>
 </main>
 <br>

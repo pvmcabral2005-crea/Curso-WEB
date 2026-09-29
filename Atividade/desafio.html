@@ -1,15 +1,27 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
-<meta charset="utf-8">
-<title>Atividade</title>
-</head>
-<body>
-<h1>Sistema de Agência de Viagem-Temperatura</h1>
-<p>Digite a temperatura atual do clima do local do seu voo</p>
-<label for="usuario">Temperatura:</label>
-<input type="number" id="temp" placeholder="Temperatuta atual é">
-<button onclick="Verificar_temperatura()">verificar</button>
 
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade</title>
+</head>
+
+<body>
+    <main>
+        <h1>Sistema de Agência de Viagem-Temperatura</h1>
+        <p>Digite a temperatura do clima do seu destino</p>
+        <label for="usuario">Temperatura:</label>
+        <input type="number" id="temp" placeholder="Ex: -5,0,10">
+        <button onclick="Verificar_temperatura()">verificar</button>
+
+        <img id="imgClima"
+            src="https://conhecimentocientifico.r7.com/wp-content/uploads/2018/12/voce-sabia-que-o-planeta-terra-tem-muitos-tipos-de-climas-diferentes.jpg"
+            alt="Destino da viagem" width="230" height="225">
+        <div id="output"></div>
+    </main>
+    <script src="script.js"></script>
 </body>
+
+
 </html>
