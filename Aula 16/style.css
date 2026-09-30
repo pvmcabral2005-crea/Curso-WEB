@@ -1,0 +1,14 @@
+body{
+    background-color:cornflowerblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button{
+    background-color:black;
+    color:azure;
+    border:1px solid white;
+}
+
+p{
+    font-size:18px;
+}
