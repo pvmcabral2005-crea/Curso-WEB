@@ -4,7 +4,7 @@ function Loop_For(){
 
     for(let dias = 10; dias>=1; dias--) {
         const item = document.createElement('li');
-        item.innerText = `Faltam ${dias} para a viagem🛫`;
+        item.innerText = `Faltam ${dias} para a viagem.🛫`;
         forLista.appendChild(item);
     }
 
