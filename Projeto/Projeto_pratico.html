@@ -10,105 +10,29 @@
     <p>Processo necessário para monitorar, organizar e gerenciar
         produtos com data de validade próxima do vencimento.
     </p>
-
-    <hr>
-</header>
-
-<main>
-    
-   <section class="estoque-produtos">
-    <h2>📦Estoque de despensa</h2>
-    <p><strong>Acompanhe os ingredientes exibidos na tela 
-        e suas datas de validade.
-    </strong></p>
-
-    <table border="3">
-
-        <caption>
-            Tabela de produtos do estoque
-        </caption>
-        <thead>
-        <tr>
-            <th>Ingrediente</th>
-            <th>Lote</th>
-            <th>Quantidade</th>
-            <th>Data de validade</th>
-            <th>Situação atual</th>
-            
-        </tr>
-        
-        
-        </thead>
-
-        <tbody>
-            
-        <tr>
-            <td>🍕Pizza</td>
-            <td>0210</td>
-            <td>12 kg</td>
-            <td>20/11/26</td>
-            <td>🟢Dentro do prazo de validade</td>
-        </tr>
-        
-        <tr>
-            <td>🍚Arroz</td>
-            <td>1246</td>
-            <td>15 kg</td>
-            <td>12/10/26</td>
-            <td>🟡Próximo do vencimento</td>
-        </tr>
-        <tr>
-            <td>🫘Feijão</td>
-            <td>1520</td>
-            <td>18 g</td>
-            <td>27/09/26</td>
-            <td>🔴Produto vencido</td>
-        </tr>
-        
-        <tr>
-            <td>🍰Bolo</td>
-            <td>1830</td>
-            <td>3 kg</td>
-            <td>08/12/26</td>
-            <td>🟢Dentro do prazo de validade</td>
-
-        <tr>
-            <td>🥩Carne assada</td>
-            <td>2105</td>
-            <td>18 kg</td>
-            <td>15/10/26</td>
-            <td>🟡Próximo do vencimento</td>
-        </tr>
-        </tbody>
-
-        <tfoot>
-            <th>Total</th>
-            <td> 5 produtos</td>
-        </tfoot>
-
-        
-    </table>
-    </section>
-     <br>
-      <section class="tela-login">
-    <form id="formulario">
-    <label for="nome">Usuario:</label>
-    <input type="text" id="usuario" placeholder="Nome de usuario">
-    <label for="ingrediente">Ingrediente:</label>
-    <input type="text" id="ingrediente" placeholder="Nome do ingrediente">
-    <label for="quantidade">Quantidade:</label>
-    <input type="Number" id="quantidade" placeholder="Quantidade solicitada">
-    <button type='submit'>Enviar</button>
-    </section>
+    <div class="cadastro">
+        <h2>Cadastro de Usuário</h2>
+        <form id ="formulario">
+            <label for="usuario">Usuário:</label>
+            <br>
+            <input type="text" id="usuario" placeholder="Digite nome de usário" required>
+            <br><br>
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" id="senha" palceholder="Digite sua senha" required>
+            <br><br>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
      
-    
-</main>
-<br>
-<footer id="rodapé">
-    <hr>
-    <p>Sistema de controle de validade de estoque</p>
-    <p>Despensa do restaurante</p>
-    
-</footer>
-</body>
-</html>
+</header>
+    <main id="painel de estoque">
+        <h2>Painel de despensa</h2>
+
+        <p>
+            Controle de ingredientes e seus respectivos prazos de validade.
+        </p>
+        <section> <h3>Resumo do Estoque</h3> <ul> <li> 🟢 Produtos dentro da validade: <strong>8</strong> </li> <li> 🟡 Produtos próximos do vencimento: <strong>3</strong> </li> <li> 🔴 Produtos vencidos: <strong>2</strong> </li> </ul> </section> <hr> <!-- ================================================= LEGENDA ================================================= --> <section> <h3>🚦 Situação dos Produtos</h3> <p> 🟢 <strong>Verde:</strong> produto dentro do prazo. </p> <p> 🟡 <strong>Amarelo:</strong> produto próximo do vencimento. </p> <p> 🔴 <strong>Vermelho:</strong> produto vencido. </p> </section> <hr> <!-- ================================================= CADASTRO DE PRODUTOS ================================================= --> <section id="produtos"> <h2>📦 Cadastro de Produtos</h2> <form> <label for="produto"> Nome do ingrediente: </label> <br> <input type="text" id="produto" name="produto" placeholder="Ex: Arroz" required > <br><br> <label for="categoria"> Categoria: </label> <br> <select id="categoria" name="categoria"> <option value=""> Selecione </option> <option value="graos"> Grãos </option> <option value="carnes"> Carnes </option> <option value="verduras"> Verduras </option> <option value="frutas"> Frutas </option> <option value="laticinios"> Laticínios </option> <option value="temperos"> Temperos </option> <option value="outros"> Outros </option> </select> <br><br> <label for="quantidade"> Quantidade: </label> <br> <input type="number" id="quantidade" name="quantidade" min="1" placeholder="Ex: 10" > <br><br> <label for="unidade"> Unidade: </label> <br> <select id="unidade" name="unidade"> <option value="kg"> Quilograma (kg) </option> <option value="g"> Grama (g) </option> <option value="l"> Litro (L) </option> <option value="unidade"> Unidade </option> <option value="caixa"> Caixa </option> </select> <br><br> <label for="validade"> Data de validade: </label> <br> <input type="date" id="validade" name="validade" required > <br><br> <label for="local"> Local de armazenamento: </label> <br> <input type="text" id="local" name="local" placeholder="Ex: Prateleira 2" > <br><br> <button type="submit"> ➕ Adicionar Produto </button> </form> </section> <hr> <!-- ================================================= LISTA DE PRODUTOS ================================================= --> <section> <h2>📋 Lista de Ingredientes</h2> <table border="1"> <thead> <tr> <th>Produto</th> <th>Categoria</th> <th>Quantidade</th> <th>Validade</th> <th>Dias restantes</th> <th>Status</th> <th>Local</th> </tr> </thead> <tbody> <!-- PRODUTO NORMAL --> <tr> <td>Arroz</td> <td>Grãos</td> <td>20 kg</td> <td>20/12/2026</td> <td>79 dias</td> <td> 🟢 Dentro da validade </td> <td>Prateleira 1</td> </tr> <!-- PRODUTO PRÓXIMO DO VENCIMENTO --> <tr> <td>Leite</td> <td>Laticínios</td> <td>10 L</td> <td>08/10/2026</td> <td>6 dias</td> <td> 🟡 Próximo do vencimento </td> <td>Geladeira 1</td> </tr> <!-- PRODUTO VENCIDO --> <tr> <td>Frango</td> <td>Carnes</td> <td>5 kg</td> <td>28/09/2026</td> <td>Vencido</td> <td> 🔴 Vencido </td> <td>Freezer 2</td> </tr> <!-- OUTRO PRODUTO --> <tr> <td>Tomate</td> <td>Verduras</td> <td>8 kg</td> <td>05/10/2026</td> <td>3 dias</td> <td> 🟡 Próximo do vencimento </td> <td>Geladeira 2</td> </tr> <tr> <td>Feijão</td> <td>Grãos</td> <td>15 kg</td> <td>15/11/2026</td> <td>44 dias</td> <td> 🟢 Dentro da validade </td> <td>Prateleira 2</td> </tr> </tbody> </table> </section> <hr> <!-- ================================================= ALERTAS ================================================= --> <section> <h2>⚠️ Alertas de Validade</h2> <article> <h3>🟡 Atenção</h3> <p> O leite vencerá em 6 dias. Verifique o estoque e priorize sua utilização. </p> </article> <article> <h3>🟡 Atenção</h3> <p> O tomate vencerá em 3 dias. Priorize seu uso nas próximas receitas. </p> </article> <article> <h3>🔴 Produto vencido</h3> <p> O frango está vencido. Retire o produto do estoque e faça a verificação necessária. </p> </article> </section> <hr> <!-- ================================================= REGRAS DO SISTEMA ================================================= --> <section> <h2>📅 Regra de Controle de Validade</h2> <p> O sistema pode utilizar a seguinte regra: </p> <ul> <li> 🟢 Mais de 7 dias: Dentro da validade </li> <li> 🟡 Entre 1 e 7 dias: Próximo do vencimento </li> <li> 🔴 0 dias ou menos: Produto vencido </li> </ul> <p> <strong>Exemplo:</strong> </p> <p> Data atual: 02/10/2026 </p> <p> Data de validade: 08/10/2026 </p> <p> Resultado: 6 dias restantes → 🟡 Próximo do vencimento. </p> </section> </main> <hr> <!-- ===================================================== RODAPÉ ===================================================== --> <footer> <p> 🍽️ Sistema de Controle de Validade da Despensa </p> <p> Projeto desenvolvido em HTML. </p> </footer> </body> </html>
+    </main>
+     </body>
+     </html>
