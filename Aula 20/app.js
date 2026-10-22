@@ -4,14 +4,9 @@ let idade = 21;
 console.log(nome);
 console.log(idade);
 
-//const somar_numeros = require('./matematica_soma.js');
-//console.log(somar_numeros(20,30));
+const calc = require('./matematica.js');
 
-//const subtrair_numeros = require('./matematica_subtracao.js');
-//console.log(subtrair_numeros(60,24));
-
-//const multiplicar_numeros = require('./matematica_mult.js');
-//console.log(multiplicar_numeros(10,5));
-
-const dividir_numeros = require('./matematica_div.js');
-console.log(dividir_numeros(120,20));
+console.log(calc.somar(30,50));
+console.log(calc.divisao(20,5));
+console.log(calc.subtrair(60,20));
+console.log(calc.multiplicacao(15,6));
