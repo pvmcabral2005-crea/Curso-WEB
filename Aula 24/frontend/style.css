@@ -1,0 +1,31 @@
+body {
+    background-color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.cadastro{
+    background-color: brown;
+    margin:8px;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 12px;
+    display:flex;
+    flex-direction: column;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+}
+
+button {
+    background-color: orange;
+    margin:0;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 12px;
+}
