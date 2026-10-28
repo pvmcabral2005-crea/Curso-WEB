@@ -30,30 +30,25 @@ formulario.addEventListener("submit", function (evento) {
                 alert("Erro:Não foi possível se conectar ao backend.");
             })
 
-            async function BuscaDados() {
-                try{
-                    const resposta = await fetch("http://localhost:3000");
-                    const dados = await resposta.json();
+        });
 
-                    console.log(dados);
-                    renderizarNaTela(dados);
-                } catch(erro) {
-                    console.error("Erro ao buscar dados:", erro);
-                }
-            }
+        const listaVisual = document.getElementById("listaVisual");
 
-            function renderizarNaTela(usuarios) {
-                const listaElement = document.getElementById("cadastros");
-                listaElement.innerHTML = "";
+        function CarregarDados() {
+            fetch("http://localhost:3000/usuarios")
+            .then(function(resposta) {
+                return resposta.json(); })
 
-                usuarios.forEach(usuario => {
-                    const li = document.createElement("li");
-                    li.textContent = usuario.nome = "" +usuario.cargo;
-                    listaElement.appendChild(li);
+            .then(function(listaUsuarios){
+                listaVisual.innerHTML= "";
+                listaUsuarios.forEach(function(user) {
+                    const itemLista = document.createElement("li");
+                    itemLista.innerHTML = `<br>${user.nome}</br> (${user.cargo})`;
+                    listaVisual.appendChild(itemLista);
                 });
-            }
-
-            BuscaDados();
-    
-    console.log(dadosUsuarios)
-});
+            })
+            .catch(function(error){
+                console.error("Erro ao buscar usuários:", error);
+            });
+        }
+        CarregarDados();
