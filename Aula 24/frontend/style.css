@@ -63,16 +63,3 @@ button {
     border-radius: 10px;
 }
 
-.btn-editar{
-    background-color:chartreuse;
-    margin: 0;
-    border: 1px solid ;
-    border-radius: 15px;
-}
-
-.btn-deletar{
-    background-color:brown ;
-    margin: 0;
-    border:1px solid;
-    border-radius: 16px;
-}

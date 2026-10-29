@@ -30,7 +30,39 @@ app.post('/usuarios', function (req,res) {
     return res.status(201).json(novoUsuario);
 });
 
+  app.put("/usuarios/:nomeParametro", function(req,res){
+     const nomeParametro = decodeURIComponent(req.params.nomeParametro);
+     const dadosNovos = req.body;
+     const usuarioEncontrado = usuarios.find(function(u){
+        return u.nomeParametro.toLowerCase() === nomeParametro.toLowerCase();
+     });
+     if(!usuarioEncontrado) {
+        return res.status(404).json({erro: "Usuário não encontrado no sistema"})
+
+     }
+
+     usuarioEncontrado.nome = dadosNovos.nome;
+     usuarioEncontrado.cargo = dadosNovos.cargo;
+     return res.json(usuarioEncontrado);
+  })
+
+  app.delete("/usuarios/:nomeUsuario", function(req,res){
+    const nomeUsuario = decodeURIComponent(req.params.nomeUsuario);
+    const usuarioExiste = usuarios.some(function(u){
+        return u.nomeUsuario.toLowerCase() === nomeUsuario.toLowerCase();
+    });
+    if(!usuarioExiste) {
+        return res.status(404).json({erro: "Usuário não encontrado no sistema"})
+    }
+    usuarios = usuarios.filter(
+        usuarioExiste = usuarioExiste.nomeUsuario !== usuarioExiste
+    );
+    res.status(204).end();
+
+
+  });
+
 const porta = 3000;
 app.listen(porta, function(){
-    console.log(`🚀 Rodando Back-end em http://localhost:${porta}`);
+    console.log(`Rodando Back-end em http://localhost:${porta}`);
 });
