@@ -66,4 +66,47 @@ function CarregarDados() {
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(dadosUsuarios)
         })
+        .then(function(){
+            UsuarioSendoEditado = null;
+            formulario.addEventListener('button').innerText = "Salvar no Sistema";
+            formulario.reset();
+            CarregarDados();})
+        .catch(function(erro) {
+            alert("Erro ao atualizar usuário", erro);
+        });
+
+
+        
+    } else {
+        fetch("http://localhost:3000/usuarios", {
+            method: "POST",
+            headers: {"Content-type": "application/json"},
+            body: JSON.stringify(dadosUsuarios)
+        })
+        .then(function(resposta){
+            return resposta.json();
+        })
+        .then(function(UsuarioSalvo){
+            alert(`O usuário ${UsuarioSalvo} foi cadastrado.`)
+            formulario.reset();
+            CarregarDados();
+        })
+        .catch(function(erro){
+            alert("Erro ao salvar usuário",erro);
+        });
     }
+
+    function PrepararEdição(nome,cargo){
+            document.getElementById('nome').value = nome;
+            document.getElementById('cargo').value = cargo;
+            formulario.addEventListener('button').innerText = "Atualizar Usuário";
+
+            UsuarioSendoEditado = nome;
+        }
+
+    function DeletarUsuario(nome){
+        document.getElementById('nome').value = nome;
+        formulario.querySelector('button').innerText = "Excluir Usuário";
+    }
+
+}
